@@ -1,0 +1,12 @@
+//Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+
+
+
+
+function digitalRoot(n) {
+  if(n < 10) return n; // If the sum is a single digit, simply return the sum
+  return digitalRoot(//if the sum is more than one digit, the computer will keep splitting the digits of the number, and add the digits together until a single-digit is produced.
+   n.toString().split('').reduce((a, b) => (a+ +b), 0)
+  )
+}
