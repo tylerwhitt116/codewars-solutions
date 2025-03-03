@@ -1,10 +1,8 @@
- 
-function getSum(a, b)
-{
-  if(a === b) return a;  
+const getSum = (a, b) => {
+  if(a === b) return a;
   
-  let min = Math.min(a,b);
   let max = Math.max(a,b);
+  let min = Math.min(a,b);
   
-  return ((max - min + 1) * (max + min)) / 2;
-}
+  return ((max - min + 1) * (min + max))/2;
+} 
