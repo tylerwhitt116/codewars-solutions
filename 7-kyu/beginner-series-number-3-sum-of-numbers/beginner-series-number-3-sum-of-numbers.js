@@ -1,4 +1,5 @@
+ 
 function getSum(a, b)
 {
-  return arr = Array.from({length: b - a}, (_, i) => a + i)
+  return arr = Array.from({length: b}, (_, i) => a + i)
 }
