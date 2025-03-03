@@ -1,4 +1,3 @@
- 
 function arithmetic(a, b, operator){
   switch(operator){
       case "add":
